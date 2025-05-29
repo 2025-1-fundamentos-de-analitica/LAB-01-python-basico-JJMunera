@@ -23,7 +23,6 @@ def pregunta_12():
                 else:
                     diccionario[clave] += suma
     return diccionario
-print(pregunta_12())
 """
     Genere un diccionario que contengan como clave la columna 1 y como valor
     la suma de los valores de la columna 5 sobre todo el archivo.

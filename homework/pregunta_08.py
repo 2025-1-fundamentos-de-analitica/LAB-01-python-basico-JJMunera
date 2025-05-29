@@ -24,7 +24,7 @@ def pregunta_08():
         lista.sort()
         return lista
     
-#print(pregunta_08())
+
 
 """
     Genere una lista de tuplas, donde el primer elemento de cada tupla

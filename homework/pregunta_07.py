@@ -23,7 +23,7 @@ def pregunta_07():
         lista.sort()
         return lista
     
-#print(pregunta_07())
+
 
 
 """

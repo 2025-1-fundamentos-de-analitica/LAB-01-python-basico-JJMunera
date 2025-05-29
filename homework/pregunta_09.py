@@ -23,7 +23,6 @@ def pregunta_09():
                     diccionario[letras] += 1
     return diccionario
 
-#print(pregunta_09())
 
 """
     Retorne un diccionario que contenga la cantidad de registros en que
