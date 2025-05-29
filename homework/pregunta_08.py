@@ -19,12 +19,14 @@ def pregunta_08():
                 diccionario[numero].append(letra) #si ya está añada nueva letra
         for numero,lista_letras in diccionario.items():
             repetidas = set(lista_letras) #eliminar repetidos
+            repetidas = list(repetidas)
+            repetidas.sort()
             añadir = (int(numero), list(repetidas)) #cambiar formato a lista
             lista.append(añadir)
         lista.sort()
         return lista
     
-
+#print(pregunta_08())
 
 """
     Genere una lista de tuplas, donde el primer elemento de cada tupla
