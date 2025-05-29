@@ -16,6 +16,7 @@ def pregunta_12():
             valores_juntos = renglon[4].split(",") #  [jjj:12,bbb:3,ddd:9,ggg:8,hhh:2]
             clave = renglon[0] #String de la columna 1
             for valoresSumar in valores_juntos: #iterar elemento de columna 5 y sumarlos
+                suma = 0
                 suma += int(valoresSumar[4:])
                 if clave not in diccionario:
                     diccionario[clave] = suma
