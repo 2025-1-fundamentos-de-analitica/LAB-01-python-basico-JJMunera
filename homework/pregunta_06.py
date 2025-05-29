@@ -8,7 +8,7 @@ utilizar pandas, numpy o scipy.
 
 def pregunta_06():
 
-    with open("../files/input/data.csv", "r") as data:
+    with open("files/input/data.csv", "r") as data:
         diccionario = {}
         for renglones in data:
             columna = renglones.strip().split("\t") #Separar los renglones

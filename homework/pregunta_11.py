@@ -10,7 +10,7 @@ def pregunta_11():
     diccionario = {
 
     }
-    with open("../files/input/data.csv", "r") as data:
+    with open("files/input/data.csv", "r") as data:
         for fila in data:
             renglon = fila.strip().split("\t")
             numero_suma = int(renglon[1])

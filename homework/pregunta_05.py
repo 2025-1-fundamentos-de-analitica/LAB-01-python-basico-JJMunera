@@ -8,7 +8,7 @@ utilizar pandas, numpy o scipy.
 
 def pregunta_05():
     diccionario = {}
-    with open("../files/input/data.csv", "r") as data:
+    with open("files/input/data.csv", "r") as data:
         for renglon in data:
             column = renglon.strip().split("\t")
             if column[0] not in diccionario:

@@ -7,7 +7,7 @@ utilizar pandas, numpy o scipy.
 
 
 def pregunta_08():
-    with open("../files/input/data.csv", "r") as data:
+    with open("files/input/data.csv", "r") as data:
         diccionario = {}
         lista = []
         for renglon in data:

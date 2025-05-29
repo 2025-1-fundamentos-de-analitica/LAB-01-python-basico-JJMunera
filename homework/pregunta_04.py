@@ -8,7 +8,7 @@ utilizar pandas, numpy o scipy.
 
 def pregunta_04():
     meses = {}
-    with open("../files/input/data.csv", "r") as data:
+    with open("files/input/data.csv", "r") as data:
         for linea in data:
             column = linea.strip().split("\t")
             fecha = column[2].split("-")

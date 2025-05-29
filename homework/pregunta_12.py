@@ -10,7 +10,7 @@ def pregunta_12():
     diccionario = {
 
     }
-    with open("../files/input/data.csv", "r") as data:
+    with open("files/input/data.csv", "r") as data:
         for fila in data:
             renglon = fila.strip().split("\t")
             valores_juntos = renglon[4].split(",") #  [jjj:12,bbb:3,ddd:9,ggg:8,hhh:2]

@@ -7,7 +7,7 @@ utilizar pandas, numpy o scipy.
 
 def pregunta_02():
     lista_registros = {}
-    with open("../files/input/data.csv", "r") as data:
+    with open("files/input/data.csv", "r") as data:
         for line in data:
             columnas = line.strip().split("\t")
             if columnas[0] not in lista_registros:

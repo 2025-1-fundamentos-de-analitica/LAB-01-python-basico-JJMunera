@@ -8,7 +8,7 @@ utilizar pandas, numpy o scipy.
 
 def pregunta_03():
     sumas = {}
-    with open("../files/input/data.csv", "r") as data:
+    with open("files/input/data.csv", "r") as data:
         for line in data:
             renglon = line.strip().split("\t")
             if renglon[0] not in sumas:
