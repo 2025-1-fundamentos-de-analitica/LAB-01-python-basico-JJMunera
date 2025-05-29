@@ -7,7 +7,26 @@ utilizar pandas, numpy o scipy.
 
 
 def pregunta_05():
-    """
+    diccionario = {}
+    with open("../files/input/data.csv", "r") as data:
+        for renglon in data:
+            column = renglon.strip().split("\t")
+            if column[0] not in diccionario:
+                diccionario[column[0]] = [column[0],column[1],column[1]]
+            elif column[0] in diccionario:
+                if column[1] > diccionario[column[0]][1]:
+                    diccionario[column[0]][1] = column[1]
+                elif column[1] < diccionario[column[0]][2]:
+                    diccionario[column[0]][2] = column[1]
+    lista = []
+    for letra, tuplas in diccionario.items():
+        lista.append(tuple(tuplas))
+    lista.sort()
+    return lista
+
+#print(pregunta_05())
+
+"""
     Retorne una lista de tuplas con el valor maximo y minimo de la columna 2
     por cada letra de la columa 1.
 
