@@ -16,7 +16,6 @@ def pregunta_10():
 
     return lista
 
-print(pregunta_10())
 """
     Retorne una lista de tuplas contengan por cada tupla, la letra de la
     columna 1 y la cantidad de elementos de las columnas 4 y 5.
